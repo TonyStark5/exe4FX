@@ -1,5 +1,9 @@
 .idea/*
+work/*
+out/*
+logs/*
 
+Exe4FX.ini
 target/
 pom.xml.tag
 pom.xml.releaseBackup
