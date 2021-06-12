@@ -1,0 +1,8 @@
+	启动页是指 JVM 启动过程首先呈现的页面，响应速
+度是最高的，类似大型软件启动页。
+	注意绘制边框或阴影，JVM 只负责显示这张图片。
+	主程序显示出来后，应第一时间关闭启动页。
+
+if (SplashScreen.getSplashScreen() != null) {
+	SplashScreen.getSplashScreen().close();
+}
