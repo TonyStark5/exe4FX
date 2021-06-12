@@ -1,0 +1,11 @@
+"约定大于配置" —— SpringBoot
+
+同样的，Exe4FX 也期望你的项目符合以下少许要求，这可以帮助 Exe4FX 自动化完成构造。
+
+1. JDK 11 及以上
+2. 标准 Maven 工程结构（src-main-java，src-main-resources）
+3. pom.xml 构造插件使用 maven-assembly-plugin，并且相关配置参考下面的文本域内容。
+4. pom.xml 依赖存在直接或间接引用 javafx.base。因为需要查找 JavaFX 版本去建立工作环境（SDK 和 jmods）
+5. 导出文件夹必须为空。如果构造时存在文件，会提醒是否清空，连续清空 12 次将不再提示
+6. JavaFX SDK 应该解压放在相对本程序目录的 work/sdk 下，文件名随官方命名（通常 Exe4FX 会自动下载和解压）
+7. JavaFX jmods 应该解压放在相对本程序目录的 work/jmods 下，文件名随官方命名（通常 Exe4FX 会自动下载和解压）
